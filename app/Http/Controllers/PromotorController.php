@@ -38,7 +38,7 @@ class PromotorController extends Controller
             'nama_angktpromotor.exists' => 'Harap Memilih Data yang Sesuai',
         ];
 
-        $validator = $this->validate($request, $rules, $message);
+        $this->validate($request, $rules, $message);
 
         $promotor = new Promotor([
             'nama_promotor' => $request->nama_angktpromotor

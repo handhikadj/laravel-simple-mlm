@@ -119,34 +119,6 @@ li .ui-state-default{
 	margin: auto;
 }
 
-/*.showloaderautocomp{
-	background-color: #fff;
-	position: absolute;
-	top: 276px;
-	bottom: 0;
-	left: 476px;
-	right: 0;
-	z-index: 99999;
-	height: 30%;
-	width: 420px;
-	border: 1px solid yellow;
-}
-
-.loaderautocomp{
-	height: 100%;
-	width: 100%;
-	margin: 0 auto 0;
-	z-index: 101;
-}
-
-.circular3{
-	animation: rotate 2s linear infinite;
-	height: 50%;
-	transform-origin: center center;
-	width: 100%;
-	margin: 45px auto auto;
-}*/
-
 .path {
 	stroke-dasharray: 1, 200;
 	stroke-dashoffset: 0;

@@ -27,7 +27,8 @@ class PesertaController extends Controller
             'nama_promotor.exists' => 'Harap Memilih Data yang Sesuai',
         ];
 
-        $validator = $this->validate($request, $rules, $message);
+        $this->validate($request, $rules, $message);
+        
         $peserta = Promotor::find($request->id);
 
         $peserta->peserta()->create([

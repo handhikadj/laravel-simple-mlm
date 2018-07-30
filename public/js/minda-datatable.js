@@ -17,17 +17,12 @@
 	   		$('#showloader').hide();
 	  	});
 
-	  	$('#tambah').click(function(){
-	  		$('.formtambahupdate').removeAttr('id', 'form-update').attr('id', 'form-tambah');
-	  		$('.modal-header h3').text('Masukkan Peserta');
-	  	});
-
 		var table = $('#minda-table').DataTable({
 			processing: true,
 			serverSide: true,
 			ajax: "/datatableApi",
 			columns: [
-			    {data: 'no_peserta', name: 'pesertas.no_peserta', searchable: false },
+			    {data: 'no_peserta', name: 'pesertas.no_peserta', orderable: false, searchable: false },
 			    {data: 'nama_peserta', name: 'pesertas.nama_peserta'},
 			    {data: 'nama_promotor', name: 'promotors.nama_promotor'},
 			    {data: 'action', name: 'action', orderable: false, searchable: false },
