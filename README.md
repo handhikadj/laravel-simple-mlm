@@ -8,7 +8,8 @@
 3. ```php artisan key:generate```
 4. ```php artisan migrate```
 5. ```php artisan db:seed```
-6. And you're all set!
+6. Login with email provided in the database with password: secret. username: {email} | password: secret
+7. And you're all set!
 
 
 
