@@ -1,4 +1,4 @@
-# laravel-simple-pos
+# laravel-simple-mlm
 
 
 ### Installation
