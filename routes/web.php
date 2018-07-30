@@ -15,6 +15,10 @@ use Illuminate\Http\Request;
 
 Auth::routes();
 
+Route::get('/under-construction', function(){
+    return view('under');
+})->name('under');
+
 Route::group(['middleware' => 'auth'], function () {
 
 	 /*

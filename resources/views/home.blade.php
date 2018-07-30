@@ -10,11 +10,11 @@
 
         <div class="datadata" id="datadata">
             <a href="javascript:void(0)" class="btn btn-info" id="tambah"  data-toggle="modal" data-target="#tambahModal"><i class="fas fa-pencil-alt mr-2"></i>Tambah</a>
-            <a href="javascript:void(0)" class="btn btn-primary" id="graphs"><i class="fas fa-chart-area mr-2"></i>Graphs</a>
+            <a href=" {{ route('under') }} " class="btn btn-primary" id="graphs"><i class="fas fa-chart-area mr-2"></i>Graphs</a>
         </div>
         
         <hr>
-        
+
         <div class="table-responsive-sm">
             <table id="minda-table" class="table">
                 <thead class="thead-light">
