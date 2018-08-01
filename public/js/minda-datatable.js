@@ -19,6 +19,10 @@
 						duration: 300}
 		});
 
+		$('.ui-tabs-nav li').click(function(){
+			console.log('a');
+		});
+
 		$('#tambahModal').on('show.bs.modal', function (e) {
 	   		$('#showloader').hide();
 	  	});

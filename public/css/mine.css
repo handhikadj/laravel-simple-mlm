@@ -39,15 +39,21 @@ li .ui-state-default{
 }
 
 .ui-tab.ui-tabs-active.ui-state-active {
-	border: 2.1px solid rgba(3,155,229 ,1);
-	border-bottom: 0;
+	border: 0;
+	border-bottom: 2.1px solid rgba(3,155,229 ,1);
 	border-radius: 0;
 	background-color: inherit;
 	margin-right: 0;
+	transition: all 0.2s ease-in;
 }
 
 .ui-corner-top.ui-state-default.ui-tab{
 	background-color: inherit;
+}
+
+.ui-corner-top.ui-state-default{
+	border: 0;
+	border-bottom: 2.1px solid #fff;
 }
 
 .ui-state-hover{
@@ -250,14 +256,15 @@ input{
 
 .borb-1{
 	border: 0;
-	border-bottom: 1px solid yellow;
+	border-bottom: 2px solid yellowgreen;
 }
 
 
 /* BOTTOM BARS ================================= */
 .input-underline  { 
 	position:relative; 
-	display:block; width:225px; 
+	display:block;
+	width:100%; 
 	top: 3px;
 }
 .input-underline:before, .input-underline:after   {
