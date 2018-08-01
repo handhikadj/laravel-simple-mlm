@@ -17,14 +17,14 @@
                         </ul>
 
                         <div id="tabs-1">
-                            <form id="form-tambahpromotor" " class="form-horizontal" method="POST">
+                            <form id="form-tambahpromotor" class="form-horizontal" method="POST">
                                 @csrf
                                 @method("POST")
                                 <div class="form-group underline-wrapper">
                                     <label id="nm_promotorlabel" for="nama_angktpromotor" class="col-md-12 control-label">Nama Peserta</label>
                                         <input type="text" id="nama_angktpromotor" name="nama_angktpromotor" class="form-control borb-1" autocomplete="off" required>
-                                        <span class="input-underline"></span>                                        
-                                        <span id="errorsangkatpromotor" class="" style="color: red;"></span>
+                                        <span class="input-underline"></span>
+                                        <span id="errorsangkatpromotor" class="" style="color: red; display: block;"></span>
                                 </div>
 
                                 <div class="modal-footer" id="modalfooter">
@@ -43,7 +43,7 @@
                                      <div>
                                         <input type="text" id="nama_forpromotor" name="nama_promotor" class="form-control borb-1" autocomplete="off" required>
                                         <span class="input-underline"></span>
-                                        <span id="errorspromotor" style="color: red;"></span>
+                                        <span id="errorspromotor" style="color: red; display: block;"></span>
                                     </div>
                                 </div>
                                 <div class="form-group">

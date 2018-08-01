@@ -22,8 +22,9 @@
                         <div class="form-group row">
                             <label for="name" class="col-md-5 col-form-label text-md-right">{{ __('Nama') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 underline-wrapper">
                                 <input id="name" type="text" class="form-control borb-1{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+                                <span class="input-underline"></span>
 
                                 @if ($errors->has('name'))
                                     <span class="invalid-feedback">
@@ -36,8 +37,9 @@
                         <div class="form-group row">
                             <label for="email" class="col-md-5 col-form-label text-md-right">{{ __('Alamat E-mail') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 underline-wrapper">
                                 <input id="email" type="email" class="form-control borb-1{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                                <span class="input-underline"></span>
 
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback">
@@ -50,8 +52,9 @@
                         <div class="form-group row">
                             <label for="password" class="col-md-5 col-form-label text-md-right">{{ __('Password') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 underline-wrapper">
                                 <input id="password" type="password" class="form-control borb-1{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                                <span class="input-underline"></span>
 
                                 @if ($errors->has('password'))
                                     <span class="invalid-feedback">
@@ -64,8 +67,9 @@
                         <div class="form-group row">
                             <label for="password-confirm" class="col-md-5 col-form-label text-md-right">{{ __('Konfirmasi Password') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 underline-wrapper">
                                 <input id="password-confirm" type="password" class="form-control borb-1" name="password_confirmation" required>
+                                <span class="input-underline"></span>
                             </div>
                         </div>
 

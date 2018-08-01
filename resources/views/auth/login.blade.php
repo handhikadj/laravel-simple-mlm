@@ -25,7 +25,7 @@
                                 <span class="input-underline"></span>
 
                                 @if ($errors->has('email'))
-                                    <span class="invalid-feedback">
+                                    <span class="invalid-feedback animated fadeInLeft">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif
@@ -40,7 +40,7 @@
                                 <span class="input-underline"></span>
 
                                 @if ($errors->has('password'))
-                                    <span class="invalid-feedback">
+                                    <span class="invalid-feedback animated fadeInLeft">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                 @endif

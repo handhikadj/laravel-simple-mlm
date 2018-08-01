@@ -19,10 +19,6 @@
 						duration: 300}
 		});
 
-		$('.ui-tabs-nav li').click(function(){
-			console.log('a');
-		});
-
 		$('#tambahModal').on('show.bs.modal', function (e) {
 	   		$('#showloader').hide();
 	  	});
@@ -64,6 +60,10 @@
 			$('#nama_peserta').val('');
 			$('#nama_angktpromotor').val('');
 			$('#errorsangkatpromotor').text('');
+			$('#nama_angktpromotor').removeClass('wrong-data-tab animated flash').addClass('borb-1');
+			$('#errorspromotor').removeClass('animated fadeIn').text('');
+			$('#errorsangkatpromotor').removeClass('animated fadeIn').text('');
+			$('#nama_forpromotor').removeClass('wrong-data-tab animated flash').addClass('borb-1');
 		});
 
 		$('#form-tambahpeserta').on('submit', function (e) {
@@ -99,8 +99,9 @@
 	            },
 	            error : function(data){
 	                $('#tabs').show();
+	                $('#nama_forpromotor').removeClass('borb-1').addClass('wrong-data-tab animated flash');
 	            	var message = data.responseJSON.errors.nama_promotor[0];
-	            	$('#errorspromotor').addClass('animated flash').text(message);
+	            	$('#errorspromotor').addClass('animated fadeIn').text(message);
 	            }
         	}); // end of ajax
 
@@ -141,8 +142,9 @@
 	            },
 	            error : function(data){
 	            	$('#tabs').show();
+	            	$('#nama_angktpromotor').removeClass('borb-1').addClass('wrong-data-tab animated flash');
 	            	var message = data.responseJSON.errors.nama_angktpromotor[0];
-	            	$('#errorsangkatpromotor').addClass('animated flash').text(message);
+	            	$('#errorsangkatpromotor').addClass('animated fadeIn').text(message);
 	            }
         	}); // end of ajax
 		});

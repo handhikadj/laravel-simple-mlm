@@ -18,7 +18,7 @@ class PesertaController extends Controller
     {
         $rules= [
             'nama_promotor' => ['required',
-                                                'exists:pesertas,nama_peserta'
+                                                'exists:promotors,nama_promotor'
                                                 ]
         ];
 

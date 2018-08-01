@@ -259,6 +259,19 @@ input{
 	border-bottom: 2px solid yellowgreen;
 }
 
+input:invalid{
+	box-shadow: none;
+}
+
+#cardstyle form input{
+	box-shadow: none;
+}
+
+.wrong-data-tab{
+	border: 0;
+	border-bottom: 2px solid red;
+}
+
 
 /* BOTTOM BARS ================================= */
 .input-underline  { 

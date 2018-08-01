@@ -10,6 +10,10 @@
 		setTimeout(function(){
 			$('#sessionlogin').hide('1000');		
 		}, 4000);
+
+		setTimeout(function(){
+			$('.invalid-feedback').addClass('animated fadeOutRight');
+		}, 3000);
 	});
 
 })(); 
