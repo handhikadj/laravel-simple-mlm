@@ -5,12 +5,18 @@
         $('#showloader').hide();
         $('#showloaderautocomp').hide();
         $('#showboxdelete').fadeOut(1750);
+        $('#minda-table_filter').addClass('underline-wrapper');
+        $('#minda-table_filter input').addClass('borb-1');
+        $('#minda-table_filter label').append('<span class="input-cari"></span>');
 	});
 
 	$(function() {
 
 		$( "#tabs" ).tabs({
-			hide: { show: "fade", hide: "fade" }
+			hide: { effect: "slide", duration: 300},
+			show: { effect: "slide",
+						direction: "right",
+						duration: 300}
 		});
 
 		$('#tambahModal').on('show.bs.modal', function (e) {

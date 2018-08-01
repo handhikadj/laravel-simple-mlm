@@ -239,15 +239,79 @@ input{
 }
 
 .form-control:focus{
-	border-bottom: 2.5px solid green;
+	border: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	transition: border 0.1s ease-in-out;
+}
+
+.underline-wrapper {
+	position: relative;
 }
 
 .borb-1{
 	border: 0;
+	border-bottom: 1px solid yellow;
 }
+
+
+/* BOTTOM BARS ================================= */
+.input-underline  { 
+	position:relative; 
+	display:block; width:225px; 
+	top: 3px;
+}
+.input-underline:before, .input-underline:after   {
+	content:'';
+	height:3px; 
+	width:0;
+	bottom:1px; 
+	position:absolute;
+	background: red; 
+	transition:0.2s ease all; 
+}
+.input-underline:before {
+	left:50%;
+}
+.input-underline:after {
+	right:50%; 
+}
+
+/* active state */
+input:focus ~ .input-underline:before, input:focus ~ .input-underline:after {
+	width:50%;
+}
+
+.input-cari  { 
+	position:relative; 
+	display:block; width:151px; 
+	top: 3px;
+	left: 36px;
+}
+
+.input-cari:before, .input-cari:after   {
+	content:'';
+	height:3px; 
+	width:0;
+	bottom:1px; 
+	position:absolute;
+	background: red; 
+	transition:0.2s ease all; 
+}
+.input-cari:before {
+	left:50%;
+}
+.input-cari:after {
+	right:50%; 
+}
+
+/* active state */
+input:focus ~ .input-cari:before, input:focus ~ .input-cari:after {
+	width:50%;
+}
+
+
+
+
 
 /*  Layout  */
 
@@ -258,10 +322,6 @@ input{
 
 .mt-10{
 	margin-top: 100px;
-}
-
-.borb-1{
-	border-bottom: 1px solid black;
 }
 
 .btndelete{
@@ -284,14 +344,6 @@ input{
 	color: rgba(0,0,0,0.52);
 	border-radius: 0;
 	box-shadow: 0px 5px 17px -3px rgba(0,0,0,0.75);
-}
-
-.borb-1{
-	background-color: rgba(38,166,154,0);
-}
-
-.borb-1:focus{
-	background-color: rgba(38,166,154,0);
 }
 
 .btn:not(:disabled):not(.disabled){
