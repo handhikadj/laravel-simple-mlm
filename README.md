@@ -1,5 +1,7 @@
-# laravel-simple-mlm
 
+# Program MLM Sederhana
+
+Aplikasi Web ini adalah aplikasi Multi-Level-Marketing sederhana menggunakan Laravel dan jQuery DataTable.  Untuk Tree Diagram-nya sedang dalam proses pembuatan
 
 ### Installation
 
@@ -10,7 +12,3 @@
 5. ```php artisan db:seed```
 6. Login with email provided in the database with password: secret. username: {email} | password: secret or register
 7. And you're all set!
-
-
-
-
